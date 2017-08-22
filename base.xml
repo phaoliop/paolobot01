@@ -12,4 +12,7 @@
 
     </context>
   </input>
+  <input pattern="(que tal?) *">
+    <output value="Bien"/>
+  </input>
 </context>
