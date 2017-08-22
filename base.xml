@@ -8,10 +8,9 @@
       <input pattern="$Text">
         <var name="UserName" value="$Text" scope="user"/>
         <output value="Mucho gusto $UserName!"/>
-        	<input pattern="que tal?">
-        		<output value="Yo estoy bien."/>
-        	</input>
       </input>
 
     </context>
+  <input pattern="(que tal?) *">
+    <output value="Yo estoy bien."/>
 </context>
