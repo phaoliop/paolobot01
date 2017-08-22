@@ -11,7 +11,8 @@
       </input>
 
     </context>
-  </input>
+</context>
+<context>
   <input pattern="(que tal?) *">
     <output value="Bien"/>
   </input>
