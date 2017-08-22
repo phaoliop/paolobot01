@@ -9,13 +9,6 @@
         <var name="UserName" value="$Text" scope="user"/>
         <output value="Mucho gusto $UserName!"/>
       </input>
-
-      <context>
-		<input pattern="*">
-  			<output value="Aun no puedo responder a eso."/>
-  		</input>
-	  </context>
-
     </context>
   </input>
   
