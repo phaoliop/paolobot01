@@ -11,6 +11,4 @@
       </input>
 
     </context>
-  <input pattern="(que tal?) *">
-    <output value="Yo estoy bien."/>
 </context>
