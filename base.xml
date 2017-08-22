@@ -14,7 +14,8 @@
   </input>
   
   <input pattern="(que tal|como estas|como te encuentras) *">
-  	<output value="Yo estoy bien."/>
+  	<output value="Yo estoy bien, gracias por preguntar $UserName
+  		Y tu que tal?"/>
   </input>
 
   <input pattern="*">
