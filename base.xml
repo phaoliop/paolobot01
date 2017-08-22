@@ -15,7 +15,17 @@
   
   <input pattern="(que tal|como estas|como te encuentras) *">
   	<output value="Yo estoy bien, gracias por preguntar $UserName
-  		Y tu que tal?"/>
+  		Y tu que tal?" if="full($UserName)"/>
+
+  	<context if="empty($UserName)">
+  		<output value="Yo estoy bien, cual es tu nombre?"/>
+
+  		<input pattern="$Text">
+        <var name="UserName" value="$Text" scope="user"/>
+        <output value="Mucho gusto $UserName!"/>
+      </input>
+
+    </context>
   </input>
 
   <input pattern="*">
