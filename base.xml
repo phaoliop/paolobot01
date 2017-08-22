@@ -13,6 +13,6 @@
   </input>
   
   <input pattern="(que tal|como estas|como te encuentras) *">
-  	<output value="Yo estoy bien, gracias por preguntar $UserName\nY tu que tal?" if="full($UserName)"/>
+  	<output value="Yo estoy bien, gracias por preguntar $UserName" if="full($UserName)"/>
   </input>
 </context>
