@@ -17,8 +17,10 @@
   	<output value="Yo estoy bien, gracias por preguntar $UserName
   		Y tu que tal?" if="full($UserName)"/>
   </input>
+</context>
 
-  <input pattern="*">
-  	<output value="Aun no puedo responder a eso."/>
-  </input>
+<context>
+	<input pattern="*">
+  		<output value="Aun no puedo responder a eso."/>
+  	</input>
 </context>
