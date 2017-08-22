@@ -8,7 +8,7 @@
       <input pattern="$Text">
         <var name="UserName" value="$Text" scope="user"/>
         <output value="Mucho gusto $UserName!"/>
-        	<input patterr="que tal?">
+        	<input pattern="que tal?">
         		<output value="Yo estoy bien."/>
         	</input>
       </input>
