@@ -11,4 +11,9 @@
       </input>
 
     </context>
+  </input>
+  
+  <input pattern="(tal?) *">
+  	<output value="Yo estoy bien."/>
+  </input>
 </context>
