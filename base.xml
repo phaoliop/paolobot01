@@ -13,7 +13,11 @@
     </context>
   </input>
   
-  <input pattern="(que tal) *">
+  <input pattern="(que tal|como estas|como te encuentras) *">
   	<output value="Yo estoy bien."/>
+  </input>
+
+  <input pattern="*">
+  	<output value="Aun no puedo responder a eso."/>
   </input>
 </context>
