@@ -19,7 +19,7 @@
   			<var name="rpt" value="Hola, yo estoy bien."/>
 
   			<context id="Hacer_preg_estado">
-  				<output value="Y tu que tal"/>
+  				<output value="$rpt Y tu que tal"/>
   			</context>
   	</input>
   	<input>
