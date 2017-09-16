@@ -5,6 +5,10 @@
   		<pattern value="$saludo"/>
   			<context id="sin_nombre" if="empty($UserName)">
   				<output value="Hola, cual es tu nombre?"/>
+  					<input pattern="$Text">
+				        <var name="UserName" value="$Text" scope="user"/>
+        				<output value="Mucho gusto $UserName!"/>
+      				</input>
   			</context>
   			<context id="con_nombre" if="full($UserName)">
   				<output value="Hola $UserName"/>
