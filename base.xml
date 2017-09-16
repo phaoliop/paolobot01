@@ -11,7 +11,7 @@
       				</input>
   			</context>
   			<context id="Saludo_con_nombre" if="full($UserName)">
-  				<output value="Hola $UserName"/>
+  				<var name="rpt" value="Hola $UserName"/>
 
   				<context id="rpt_y_preg_estado">
   				</context>
@@ -22,7 +22,7 @@
   			<var name="rpt" value="Hola, yo estoy bien."/>
 
   			<context id="rpt_y_preg_estado">
-  				<output value="$rpt Que tal $UserName?"/>
+  				<output value="$rpt Que tal?"/>
   			</context>
   	</input>
   	<input>
