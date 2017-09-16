@@ -17,10 +17,12 @@
   	<input>
   		<pattern value="$saludo $MP_mi_estado"/>
   			<output value="Hola, yo estoy bien."/>
+  			<output value="y tu?"/>
   	</input>
   	<input>
   		<pattern value="$MP_mi_estado"/>
   			<output value="yo estoy bien."/>
+  			<output value="y tu?"/>
   	</input>
 
 </context>
