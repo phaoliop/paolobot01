@@ -8,16 +8,10 @@
   					<input pattern="$Text">
 				        <var name="UserName" value="$Text" scope="user"/>
         				<output value="Mucho gusto $UserName!"/>
-        				
-        				<context id="rpt_y_preg_estado">
-  						</context>
       				</input>
   			</context>
   			<context id="Saludo_con_nombre" if="full($UserName)">
   				<output value="Hola $UserName"/>
-  					
-  				<context id="rpt_y_preg_estado">
-  				</context>
   			</context>
   	</input>
   	<input>
