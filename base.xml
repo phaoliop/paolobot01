@@ -3,7 +3,10 @@
   <pattern name="MP_mi_estado" value="(que tal*|como estas*|como te encuentras*)"/>
   	<input>
   		<pattern value="$saludo"/>
-  			<output value="Hola"/>
+  			<context id="sin_nombre" if="empty($UserName)">
+  				<output value="Hola, cual es tu nombre?"/>
+  			<context id="con_nombre" if="full($UserName)">
+  				<output value="Hola $UserName"/>
   	</input>
   	<input>
   		<pattern value="$saludo $MP_mi_estado"/>
