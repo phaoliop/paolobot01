@@ -2,12 +2,12 @@
 <input>
   <pattern name="saludo" value="(hola*|buenas*|ola*|holi*)"/>
   	<input>
-  		<pattern value="* (quieres) * $saludo"/>
-  			<output value="Hola"/>
-  	</input>
-  	<input>
   		<pattern value="* (no) (quieres) * $saludo"/>
   			<output value="no Hola"/>
+  	</input>
+  	<input>
+  		<pattern value="* (quieres) * $saludo"/>
+  			<output value="Hola"/>
   	</input>
  </input>
 	
