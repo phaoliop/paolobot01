@@ -18,5 +18,9 @@
   		<pattern value="$saludo $MP_mi_estado"/>
   			<output value="Hola, yo estoy bien."/>
   	</input>
+  	<input>
+  		<pattern value="$MP_mi_estado"/>
+  			<output value="yo estoy bien."/>
+  	</input>
 
 </context>
