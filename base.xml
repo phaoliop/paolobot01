@@ -1,11 +1,14 @@
 <context>
   <pattern name="saludo" value="(hola*|buenas*|ola*|holi*)"/>
   <pattern name="MP_mi_estado" value="(que tal*|como estas*|como te encuentras*)"/>
-  	<input pattern="$saludo">
+  	<input>
+  		<pattern value="$saludo"/>
   			<context id="sin_nombre" if="empty($UserName)">
   				<output value="Hola, cual es tu nombre?"/>
+  			</context>
   			<context id="con_nombre" if="full($UserName)">
   				<output value="Hola $UserName"/>
+  			</context>
   	</input>
   	<input>
   		<pattern value="$saludo $MP_mi_estado"/>
