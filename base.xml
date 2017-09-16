@@ -7,7 +7,7 @@
   	</input>
   	<input>
   		<pattern value="* (no quieres) * $saludo"/>
-  			<output value="Hola"/>
+  			<output value="no Hola"/>
   	</input>
  </input>
 	
