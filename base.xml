@@ -11,7 +11,7 @@
       				</input>
   			</context>
   			<context id="Saludo_con_nombre" if="full($UserName)">
-  				<output value="Hola $UserName"/>
+  				<output value="Hola $UserName."/>
   			</context>
   	</input>
   	<input>
