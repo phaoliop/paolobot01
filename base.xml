@@ -14,7 +14,7 @@
   				<output value="Hola $UserName"/>
 				<input>
   					<context id="rpt_y_preg_estado">
-  						<output value="Hola $UserName"/>
+  						<output value="Hola 2 $UserName"/>
   					</context>
   				</input>
   			</context>
