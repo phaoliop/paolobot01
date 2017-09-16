@@ -12,6 +12,9 @@
   			</context>
   			<context id="Saludo_con_nombre" if="full($UserName)">
   				<output value="Hola $UserName"/>
+
+  				<context id="rpt_y_preg_estado">
+  				</context>
   			</context>
   	</input>
   	<input>
