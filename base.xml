@@ -11,7 +11,7 @@
       				</input>
   			</context>
   			<context id="Saludo_con_nombre" if="full($UserName)">
-  				<var name="rpt" value="Hola $UserName"/>
+  				<output value="Hola $UserName"/>
 				<input>
   					<context id="rpt_y_preg_estado">
   					</context>
