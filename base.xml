@@ -16,7 +16,7 @@
   	</input>
   	<input>
   		<pattern value="$saludo $Preg_estado"/>
-  			<output value="Hola, yo estoy bien."/>
+  			<var name="rpt" value="Hola, yo estoy bien."/>
 
   			<context id="Hacer_preg_estado">
   				<output value="Y tu que tal"/>
@@ -24,8 +24,8 @@
   	</input>
   	<input>
   		<pattern value="$Preg_estado"/>
-  			<output value="yo estoy bien."/>
-  			
+  			<var name="rpt" value="Hola, yo estoy bien."/>
+
   			<context id="Hacer_preg_estado">
   			</context>
   	</input>
