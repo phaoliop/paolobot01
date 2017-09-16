@@ -12,9 +12,10 @@
   			</context>
   			<context id="Saludo_con_nombre" if="full($UserName)">
   				<var name="rpt" value="Hola $UserName"/>
-
-  				<context id="rpt_y_preg_estado">
-  				</context>
+				<input>
+  					<context id="rpt_y_preg_estado">
+  					</context>
+  				</input>
   			</context>
   	</input>
   	<input>
