@@ -1,5 +1,5 @@
 <context>
-  <input pattern="(hola|buenas) *">
+  <input pattern="(hola|buenas|holi|ola) *">
     <output value="Hola $UserName!" if="full($UserName)"/>
 
     <context if="empty($UserName)">
@@ -13,6 +13,13 @@
   </input>
   
   <input pattern="(que tal|como estas|como te encuentras) *">
-  	<output value="Yo estoy bien, gracias por preguntar $UserName" if="full($UserName)"/>
+  	<output value="Yo estoy bien, gracias por preguntar $UserName Y tu que tal?" if="full($UserName)"/>
+  </input>
+
+  <input value="(ella)">
+  		<output value="Ella no te ama">
+  </input>
+  <input value="(el)">
+  		<output value="El no te ama">
   </input>
 </context>
