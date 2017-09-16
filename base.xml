@@ -6,7 +6,7 @@
   			<output value="Hola"/>
   	</input>
   	<input>
-  		<pattern value="* (no quieres) * $saludo"/>
+  		<pattern value="* (no) (quieres) * $saludo"/>
   			<output value="no Hola"/>
   	</input>
  </input>
