@@ -3,30 +3,36 @@
   <pattern name="Preg_estado" value="(que tal*|como estas*|como te encuentras*)"/>
   	<input>
   		<pattern value="$saludo"/>
-  			<context id="sin_nombre" if="empty($UserName)">
+  			<context id="Saludo_sin_nombre" if="empty($UserName)">
   				<output value="Hola, cual es tu nombre?"/>
   					<input pattern="$Text">
 				        <var name="UserName" value="$Text" scope="user"/>
         				<output value="Mucho gusto $UserName!"/>
+        				
+        				<context id="rpt_y_preg_estado">
+  						</context>
       				</input>
   			</context>
-  			<context id="con_nombre" if="full($UserName)">
+  			<context id="Saludo_con_nombre" if="full($UserName)">
   				<output value="Hola $UserName"/>
+  					
+  				<context id="rpt_y_preg_estado">
+  				</context>
   			</context>
   	</input>
   	<input>
   		<pattern value="$saludo $Preg_estado"/>
   			<var name="rpt" value="Hola, yo estoy bien."/>
 
-  			<context id="Hacer_preg_estado">
-  				<output value="$rpt Y tu que tal"/>
+  			<context id="rpt_y_preg_estado">
+  				<output value="$rpt Que tal $UserName?"/>
   			</context>
   	</input>
   	<input>
   		<pattern value="$Preg_estado"/>
   			<var name="rpt" value="yo estoy bien."/>
 
-  			<context id="Hacer_preg_estado">
+  			<context id="rpt_y_preg_estado">
   			</context>
   	</input>
 
