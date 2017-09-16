@@ -18,10 +18,10 @@
 
   <input>
 		<pattern value="(ella)">
-  		<output value="Ella no te ama">
+  		<output value="Ella no te ama"/>
   </input>
   <input>
 		<pattern value="(el)">
-  			<output value="El no te ama">
+  			<output value="El no te ama"/>
   </input>
 </context>
