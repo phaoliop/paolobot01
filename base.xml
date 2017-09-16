@@ -16,10 +16,12 @@
   	<output value="Yo estoy bien, gracias por preguntar $UserName Y tu que tal?" if="full($UserName)"/>
   </input>
 
-  <input value="(ella)">
+  <input>
+		<pattern value="(ella)">
   		<output value="Ella no te ama">
   </input>
-  <input value="(el)">
-  		<output value="El no te ama">
+  <input>
+		<pattern value="(el)">
+  			<output value="El no te ama">
   </input>
 </context>
