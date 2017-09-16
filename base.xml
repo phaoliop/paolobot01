@@ -1,11 +1,12 @@
 <context>
   <pattern name="saludo" value="(hola*|buenas*|ola*|holi*)"/>
   	<input>
-  		<pattern value="* (quieres) * $saludo"/>
+  		<pattern value="$saludo"/>
   			<output value="Hola"/>
   	</input>
   	<input>
-  		<pattern value="* (no) (quieres) * $saludo"/>
+  		<pattern value="no $saludo"/>
   			<output value="no Hola"/>
   	</input>
+
 </context>
