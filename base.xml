@@ -24,10 +24,10 @@
   			<context id="rpt_y_preg_estado">
   				<output value="$rpt Que tal?"/>
   					<input>
+  						<pattern value="$Rpt_estado_bueno"/>
   							<context id="me_dice_su_estado_bueno">
-  								<pattern value="$Rpt_estado_bueno"/>
-									<var name="UserEstado" value="bien" scope="user"/>
-									<output value="Genial!"/>
+								<var name="UserEstado" value="bien" scope="user"/>
+								<output value="Genial!"/>
   							</context>
 
   					</input>
