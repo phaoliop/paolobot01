@@ -1,9 +1,9 @@
 <context>
   <pattern name="saludo" value="(hola|buenas|ola|holi) *"/>
   <pattern name="Preg_estado" value="(que tal*|como estas*|como te encuentras*)"/>
-  <pattern name="Rpt_estado_malo" value="* (nada bien|peor|mal) *"/>
-  <pattern name="Rpt_estado_triste" value="* (triste) *"/>
-  <pattern name="Rpt_estado_bueno" value="* (bien|mejor|genial) *"/>
+  <pattern name="Rpt_estado-malo" value="* (nada bien|peor|mal) *"/>
+  <pattern name="Rpt_estado-triste" value="* (triste) *"/>
+  <pattern name="Rpt_estado-bueno" value="* (bien|mejor|genial) *"/>
   	<input>
   		<pattern value="$saludo"/>
   			<context id="Saludo_sin_nombre" if="empty($UserName)">
@@ -24,10 +24,22 @@
   			<context id="rpt_y_preg_estado">
   				<output value="$rpt Que tal?"/>
   					<input>
-  						<pattern value="$Rpt_estado_bueno"/>
-  							<context id="me_dice_su_estado_bueno">
+  						<pattern value="$Rpt_estado-malo"/>
+  							<context id="me_dice_su_estado-malo">
+								<var name="UserEstado" value="mal" scope="user"/>
+								<output value="Estaras bien."/>
+  							</context>
+
+  						<pattern value="$Rpt_estado-triste"/>
+  							<context id="me_dice_su_estado-triste">
+								<var name="UserEstado" value="triste" scope="user"/>
+								<output value="No estes triste."/>
+  							</context>
+
+  						<pattern value="$Rpt_estado-bueno"/>
+  							<context id="me_dice_su_estado-bueno">
 								<var name="UserEstado" value="bien" scope="user"/>
-								<output value="Genial!"/>
+								<output value="Genial."/>
   							</context>
 
   					</input>
