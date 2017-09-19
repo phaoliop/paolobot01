@@ -29,13 +29,17 @@
 								<var name="UserEstado" value="mal" scope="user"/>
 								<output value="Estaras bien."/>
   							</context>
+  					</input>
 
+					<input>
   						<pattern value="$Rpt_estado-triste"/>
   							<context id="me_dice_su_estado-triste">
 								<var name="UserEstado" value="triste" scope="user"/>
 								<output value="No estes triste."/>
   							</context>
+  					</input>
 
+					<input>
   						<pattern value="$Rpt_estado-bueno"/>
   							<context id="me_dice_su_estado-bueno">
 								<var name="UserEstado" value="bien" scope="user"/>
